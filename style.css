@@ -1,0 +1,190 @@
+:root{
+    --bg-maroon-100:#7b2c34;
+    --bg-deepgold-100:#c8a165;
+    --bg-creamyivory-100:#f8f4e3;
+    --bg-sagegreen-100:#b7c9a8;
+    --text-deepgold-100:#c8a165;
+}
+nav{
+    background:var(--bg-maroon-100);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* prevent horizontal scroll */
+  }
+
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Horizontal Navbar */
+  .horizontal-navbar {
+    width: 100%;
+    height: 60px;
+    background-color: var(--bg-maroon-100);
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+  
+  .vertical-navbar {
+    width: 190px;
+    background-color: var(--bg-maroon-100); /* or your preferred color */
+    color: white;
+    position: fixed;
+    top: 60px; /* below horizontal navbar */
+    left: 0;
+    height: calc(100% - 60px); /* full height minus horizontal navbar height */
+    padding-top: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .vertical-navbar a {
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.3s;
+    text-align: center;
+    font-size: 14px !important;
+  }
+  
+  .vertical-navbar a:hover {
+    background-color: var(--bg-deepgold-100) !important;
+    transition: background-color 0.3s ease;
+  }
+  
+  
+  .vertical-navbar a {
+    display: block;
+    font-size: 16px;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+
+  .vertical-navbar a:hover {
+    background-color: #575757;
+  }
+
+
+.carousel,
+.carousel-inner,
+.carousel-item {
+    height: 100vh;
+}
+.carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+a.navbar-brand{
+    font-family: 'Playfair Display',sans-serif;
+    color: white;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+a.nav-link{
+    color: white !important;
+    font-family: 'Lato',sans-serif;
+}
+
+
+form input{
+    width: 100%;
+    max-width: 1000px; /* limit to 1000px if screen is wide enough */
+    padding: 8px 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px; 
+    box-sizing: border-box; /* recommended to include padding in width */
+}
+form button.btn{
+    width: 150px;
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    color: var(--bg-maroon-100);
+    background-color: var(--bg-creamyivory-100);
+}
+form button.btn:hover{
+    background-color: var(--bg-maroon-100);
+    color: var(--bg-creamyivory-100);
+    border: 1px solid var(--bg-creamyivory-100);
+}
+.shop-content{
+    
+    margin-left: 190px; /* same as sidebar width */
+    padding: 20px;
+    min-height: 100vh;
+    background-color: #f4f4f4;   
+}
+.banner img{
+    padding: 0%;
+    margin-top: 60px;
+}
+form {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* optional: center it horizontally */
+  }
+  
+  form input {
+    width: 500px;
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+.shop-item-cards{
+    margin-top: 36px;
+    margin-left: 20px;
+    margin-right: 20;
+    padding: 15px;
+}  
+
+.card img-section{
+  width:  223px;
+  height: 285px;
+}
+
+.card-title{
+    font-size: 16px;
+}
+p.card-price{
+    color: #7b2c34;
+    font-weight: bold;
+    font-size:16px;
+}
+p.card-rating{
+    text-align: end;
+
+}
+a.btn.btn-buynow{
+    background-color: #c8a165;
+    color: white;
+}
